@@ -1,0 +1,30 @@
+.comment{
+	text-align: center;
+	width: 50%;
+}
+
+.table{
+	width: 100%;
+	border: 1px solid black;
+	background: linear-gradient(to right, #FFCDB8, #C3FF9E);
+
+}
+
+.container{
+	border: 1px solid black;
+	height: 50px;
+	width: 99.5%;
+}
+
+.formdiv{
+	margin-left: 35%;
+}
+
+.post{
+	margin-left: 33%;
+	background-color: red;
+}
+
+body{
+	background: linear-gradient(to right, #FFC2C2, #B3FBFF);
+}

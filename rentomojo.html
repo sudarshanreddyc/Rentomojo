@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style_rento.css">
+
+
+
+    <script type="text/javascript">
+    	function input(){
+    		var val1= document.getElementById('name').value;
+    		//var val2= document.getElementById('date').value;
+    		var val3= document.getElementById('textarea').value;
+    		//var val1="sudarshan";
+    	text(val1,val3);
+    	}
+
+    	
+
+    	function text(val1,val3){
+    			var html = "<div id='rentomojo'></div>"+val1+"<br>"+val3+"<br>";
+    			$('#container').append(html);
+    		
+    		document.getElementById('name').value = "";
+    		document.getElementById('textarea').value = "";
+    	}
+    </script>
+
+
+  </head>
+  <body>
+<!--   	<script src="script.js">
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<div class="formdiv">
+	<table>
+  		<tr>
+  			<td>Name</td><td class="form"><input type="text" name="" id="name"></td>
+  		</tr>
+  		<tr>
+  			<td>Comment</td><td class="form"><textarea id="textarea" cols="40" rows="5"></textarea></td>
+  		</tr>
+  	</table>
+  	<button class="post" id="button" onclick="input()">Post Comment</button>
+</div>
+
+<div id="container" id="t">
+	<div id="rentomojo">
+		
+	</div>
+
+</div>
+  </body>
+</html>
+
+
+
